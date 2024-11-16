@@ -17,9 +17,7 @@ public class Colaborador {
     )
     private Set<Tarefa> tarefas = new HashSet<>();
 
-    // Construtores, Getters e Setters
-    public Colaborador() {}
-
+    // Getters e setters
     public Long getId() {
         return id;
     }
@@ -28,6 +26,19 @@ public class Colaborador {
         this.id = id;
     }
 
-    // Outros getters e setters omitidos para brevidade
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Set<Tarefa> getTarefas() {
+        return tarefas;
+    }
+
+    public void setTarefas(Set<Tarefa> tarefas) {
+        this.tarefas = tarefas;
+    }
 }
- 
